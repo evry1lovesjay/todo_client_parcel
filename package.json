@@ -2,9 +2,9 @@
   "name": "todo_client_parcel",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "source": "src/index.html",
   "scripts": {
-    "start": "parcel ./index.html",
+    "start": "parcel index.html",
     "build": "parcel build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
