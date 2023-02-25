@@ -1,0 +1,181 @@
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, Courier New, monospace;
+}
+
+:root {
+  --primary: #d81e58;
+  --secondary: #8a4efc;
+  --light: #eee;
+  --light-alt: #61759b;
+  --dark: #131a26;
+  --dark-alt: #202b3e;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Fira Sans, sans-serif;
+}
+
+body {
+  background-color: var(--dark-alt);
+  color: var(--light);
+}
+
+.App {
+  padding: 32px;
+}
+
+h1 {
+  margin-bottom: 32px;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+h4 {
+  color: var(--light-alt);
+  margin-bottom: 16px;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.todo {
+  background-color: var(--dark);
+  cursor: pointer;
+  border-radius: 16px;
+  align-items: center;
+  margin-bottom: 16px;
+  padding: 16px;
+  transition: all .5s;
+  display: flex;
+  position: relative;
+}
+
+.todo:hover {
+  opacity: .8;
+}
+
+.todo .checkbox {
+  width: 20px;
+  height: 20px;
+  background-color: var(--dark-alt);
+  border-radius: 16px;
+  margin-right: 16px;
+  transition: all .4s;
+}
+
+.todo.is-complete .checkbox {
+  background-color: var(--primary);
+  background-image: linear-gradient(to bottom, var(--primary), var(--secondary));
+}
+
+.todo .text {
+  font-size: 20px;
+}
+
+.todo.is-complete .text {
+  text-decoration: line-through;
+}
+
+.todo .delete-todo {
+  width: 24px;
+  height: 24px;
+  color: #fff;
+  background-color: #af1e2d;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  position: absolute;
+  top: 50%;
+  right: 16px;
+  transform: translateY(-50%);
+}
+
+.addPopup {
+  width: 64px;
+  height: 64px;
+  color: var(--light);
+  background-image: linear-gradient(to bottom right, var(--primary), var(--secondary));
+  cursor: pointer;
+  border-radius: 999px;
+  justify-content: center;
+  align-items: center;
+  font-size: 28px;
+  font-weight: 900;
+  display: flex;
+  position: fixed;
+  bottom: 32px;
+  right: 32px;
+}
+
+.popup {
+  width: 90%;
+  max-width: 400px;
+  background-color: var(--light);
+  box-shadow: 0px 3px 24px var(--dark);
+  border-radius: 16px;
+  padding: 32px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.closePopup {
+  width: 20px;
+  height: 20px;
+  color: var(--light);
+  cursor: pointer;
+  background-color: var(--primary);
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  display: flex;
+  position: absolute;
+  top: 16px;
+  right: 16px;
+}
+
+.popup h3 {
+  color: var(--dark);
+  text-transform: uppercase;
+  margin-bottom: 16px;
+  font-weight: 400;
+}
+
+.add-todo-input {
+  appearance: none;
+  width: 100%;
+  background-color: #fff;
+  border: none;
+  border-radius: 16px;
+  outline: none;
+  padding: 16px;
+  font-size: 20px;
+  box-shadow: 0 2px 24px #0003;
+}
+
+.button {
+  background-image: linear-gradient(to right, var(--primary), var(--secondary));
+  text-transform: uppercase;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 99px;
+  margin-top: 16px;
+  padding: 16px 32px;
+  font-size: 18px;
+  font-weight: 700;
+  display: inline-block;
+}
+
+/*# sourceMappingURL=index.61d3354a.css.map */
